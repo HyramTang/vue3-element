@@ -16,6 +16,18 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
+    },
+    {
+      path: '/page',
+      redirect: '/page/table',
+      component: () => import('../layout/page/index.vue'),
+      children: [
+        {
+          path: 'table',
+          name: 'table',
+          component: () => import('../views/table/index.vue')
+        }
+      ]
     }
   ]
 })

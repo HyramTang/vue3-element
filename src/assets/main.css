@@ -1,3 +1,17 @@
 body {
   margin: 0;
+  background-color: #f0f0f0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.delta-container {
+  min-width: 1240px;
+  background-color: #fff;
+}
+
+.el-main {
+  overflow: hidden;
 }
